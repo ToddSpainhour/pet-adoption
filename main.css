@@ -4,47 +4,30 @@ body {
 
 
 
-/*
+
 #pet-barn {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    border: solid;
-    border-color: red;
 
 }
 
 
+.animals {
+    border: solid;
+    border-color: black;
+    background-color: snow;
+    margin: 10px;
+}
+
+
+
 .pet-name {
+    background-color: lightgrey;
     border-width: 2px;
     border-color: steelblue;
     border: solid;
 }
-
-.pet-color {
-    border-width: 2px;
-    border-color: steelblue; 
-    border: solid;
-}
-
-.pet-skill {
-    border-width: 2px;
-    border-color: steelblue; 
-    border: solid;
-}
-
-.pet-type {
-    border-width: 2px;
-    border-color: steelblue; 
-    border: solid;
-}
-
-p {
-    text-align: center;
-}
-
-.pet-image {
- align-content: center;}
 
 */
