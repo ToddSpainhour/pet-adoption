@@ -215,6 +215,8 @@ const pets = [
     }
   ];
 
+
+  //the function below doesn't change. It prints to your DOM using your elementID
 const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML = textToPrint;
@@ -225,15 +227,15 @@ const printToDom = (divId, textToPrint) => {
   const buildPetCards = () => {
     let domString = "";
     for(i = 0; i < pets.length; i++) {
-        domString += '<div class="pet-barn">'
-        domString += `<p class="pet-name">${pets[i].name}</p>`
-        domString += `<img src=${pets[i].imageUrl} class="pet-image">`
-        domString += `<p class="pet-color">${pets[i].color}</p>`
-        domString += `<p class="pet-skill">${pets[i].specialSkill}</p>`
-        domString += `<p class="pet-type>${pets[i].type}</p>`
-        domString += '</div>'
+        domString += '<div class="animals">';
+        domString += `<p class="pet-name">${pets[i].name}</p>`;
+        domString += `<img src=${pets[i].imageUrl} class="pet-image">`;
+        domString += `<p class="pet-color">${pets[i].color}</p>`;
+        domString += `<p class="pet-skill">${pets[i].specialSkill}</p>`;
+        domString += `<p class="pet-type">${pets[i].type}</p>`;
+        domString += '</div>';
 } 
-    printToDom('pet-barn', domString);
+    printToDom("pet-barn", domString);
     }
 
 
