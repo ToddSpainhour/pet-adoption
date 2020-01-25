@@ -217,6 +217,8 @@ const pets = [
 
 
   //the function below doesn't change. It prints to your DOM using your elementID
+
+  
 const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML = textToPrint;
@@ -237,10 +239,6 @@ const printToDom = (divId, textToPrint) => {
 } 
     printToDom("pet-barn", domString);
     }
-
-
-
-    
 
 
 console.log(buildPetCards())

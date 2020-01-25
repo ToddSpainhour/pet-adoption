@@ -1,10 +1,10 @@
 body {
-    background-color: darkolivegreen
+    background-color: snow
 }
 
 
 
-
+/* the whole container for everything*/
 #pet-barn {
     display: flex;
     flex-wrap: wrap;
@@ -14,20 +14,36 @@ body {
 }
 
 
+/* individual animal cards */
 .animals {
+    display: flex;
+    flex-direction: column;
     border: solid;
-    border-color: black;
+    border-color: red;
     background-color: snow;
     margin: 10px;
+    max-width: 30%;
+    justify-content: center;
+    border-radius: 15px;
+    
 }
 
 
 
-.pet-name {
+.pet-name,  p {
     background-color: lightgrey;
     border-width: 2px;
     border-color: steelblue;
     border: solid;
+    align-content: center;
 }
 
-*/
+img {
+    max-width: 50%;
+    align-content: center;
+    ;
+}
+
+p {
+    justify-content: center;
+}
