@@ -234,7 +234,7 @@ const printToDom = (divId, textToPrint) => {
         domString += `<img src=${pets[i].imageUrl} class="pet-image">`;
         domString += `<p class="pet-color">${pets[i].color}</p>`;
         domString += `<p class="pet-skill">${pets[i].specialSkill}</p>`;
-        domString += `<p class="pet-type">${pets[i].type}</p>`;
+        domString += `<p class="${pets[i].type}Card">${pets[i].type}</p>`;
         domString += '</div>';
 } 
     printToDom("pet-barn", domString);
