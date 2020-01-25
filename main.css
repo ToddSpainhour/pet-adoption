@@ -1,11 +1,27 @@
 body {
-    background-color: darkolivegreen
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
 
+.cats-button {
+    background-color: #a2d5f2;
+}
+.dogs-button {
+    background-color: #ccda46;
+}
+.dinos-button {
+    background-color:#ee8572;
+}
 
-.pet-barn {
+
+
+/*this is the whole flexbox container for all the cards*/
+#pet-barn {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -13,30 +29,80 @@ body {
 
 }
 
-
+/*this is the individual pet cards*/
 .animals {
     border: solid;
-    border-color: black;
+    border-color: slategray;
+    border-radius: 15px;
     background-color: snow;
     margin: 10px;
     max-width: 30%;
+    display: flex;
+    flex-flow: column;
 }
 
 
 
 .pet-name {
-    background-color: lightgrey;
-    border-width: 2px;
-    border-color: steelblue;
-    border: solid;
+    background-color: lightgray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: slategrey;
+    font-weight: bold;
+    font-size: 2em;
 }
 
-.pet-barn, p {
-    color: red;
-    background-color: yellow;
+
+p {
+    text-align: center;
 }
 
+/*
+this one works too!
 
 img {
-    max-width: 20%;
+    margin: auto;
+    max-width: 75%;
+    border-style: solid;
+    border-color: slategray;
+    border-width: 1px;
+    border-radius: 15px;
+
 }
+*/
+
+.pet-image {
+    margin: auto;
+    max-width: 50%;
+    border-style: solid;
+    border-color: slategray;
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+.catCard {
+background-color: #a2d5f2;
+padding: 15px;
+font-weight: bold;
+color: #07689f;
+font-size: 1.5em;
+}
+
+.dogCard {
+background-color: #ccda46;
+padding: 15px;
+font-weight: bold;
+color: #697c37;
+font-size: 1.5em;
+}
+
+.dinoCard {
+    background-color:#e3e3e3;
+    padding: 15px;
+    font-weight: bold;
+    color: #ee8572;
+    font-size: 1.5em;
+}
+
+
+
