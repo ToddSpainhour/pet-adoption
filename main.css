@@ -1,11 +1,11 @@
 body {
-    background-color: snow
+    background-color: darkolivegreen
 }
 
 
 
-/* the whole container for everything*/
-#pet-barn {
+
+.pet-barn {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -14,36 +14,29 @@ body {
 }
 
 
-/* individual animal cards */
 .animals {
-    display: flex;
-    flex-direction: column;
     border: solid;
-    border-color: red;
+    border-color: black;
     background-color: snow;
     margin: 10px;
     max-width: 30%;
-    justify-content: center;
-    border-radius: 15px;
-    
 }
 
 
 
-.pet-name,  p {
+.pet-name {
     background-color: lightgrey;
     border-width: 2px;
     border-color: steelblue;
     border: solid;
-    align-content: center;
 }
+
+.pet-barn, p {
+    color: red;
+    background-color: yellow;
+}
+
 
 img {
-    max-width: 50%;
-    align-content: center;
-    ;
-}
-
-p {
-    justify-content: center;
+    max-width: 20%;
 }
