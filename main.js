@@ -226,8 +226,8 @@ const printToDom = (divId, textToPrint) => {
 
 
 
-  const buildPetCards = () => {
-    let domString = "";
+const buildPetCards = () => {
+  let domString = "";
     for(i = 0; i < pets.length; i++) {
         domString += '<div class="animals">';
         domString += `<p class="pet-name">${pets[i].name}</p>`;
@@ -236,10 +236,53 @@ const printToDom = (divId, textToPrint) => {
         domString += `<p class="pet-skill">${pets[i].specialSkill}</p>`;
         domString += `<p class="${pets[i].type}Card">${pets[i].type}</p>`;
         domString += '</div>';
-} 
+    } 
     printToDom("pet-barn", domString);
+}
+
+
+
+/*
+const animalTypeButtons = (e) => {
+  const buttonId = e.target.divId //i feel like this DivId could cause issues
+  if (buttonId === "all-button") {
+    buildPetCards(pets);
+  } else {
+      const petTypes = []
+      for(i = 0; i < pets.length; i++) {
+        if(pets[i].type === buttonId){
+          petTypes.push(pets[i]);
+        }
+      }
+        buildPetCards(petTypes, buildPetCards(pets))
+  }
+}
+*/
+
+
+const catButton = () => {
+  const catsOnly = []
+  if(pets[i].type === "cat") {
+    catsOnly.push(pets[i])
+  }
+}
+
+
+
+const events = () => {
+  document.getElementById('cat').addEventListener('click', catOnly);
+  document.getElementById('dog').addEventListener('click', animalTypeButtons);
+  document.getElementById('dino').addEventListener('click', animalTypeButtons);
+  document.getElementById('all-button').addEventListener('click', animalTypeButtons)
     }
 
+ 
+const init = () => {
+  buildPetCards(pets)
+  events()
+}
 
-console.log(buildPetCards())
-   
+init()
+
+//console.log(buildPetCards())
+  
