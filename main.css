@@ -8,13 +8,13 @@ body {
 
 
 
-.cats-button {
+#cat {
     background-color: #a2d5f2;
 }
-.dogs-button {
+#dog {
     background-color: #ccda46;
 }
-.dinos-button {
+#dino {
     background-color:#ee8572;
 }
 
