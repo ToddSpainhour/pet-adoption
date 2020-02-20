@@ -3,7 +3,7 @@
 ## Description: In this project, I created cards that print to the DOM from an array within the Javascript file. Event listeners were added to the buttons to display a certain type of card, or in this case, pets! The goal is to display only what the user wants to see. 
 
 ## Screenshots
-![Project Screenshot](/screenshots/product-cards-screenshot.jpg)
+![Project Screenshot](./screenshots/product-cards-screenshot.jpg)
 
 ## How To Run
 1. Clone down this repo.
