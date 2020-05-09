@@ -161,13 +161,6 @@ const pets = [
       type: "cat",
       imageUrl: "https://tailandfur.com/wp-content/uploads/2016/03/40-Scary-and-Funny-Cat-Pictures-8.jpg"
     },
-    {
-      name: "Oscar",
-      color: "Gray",
-      specialSkill: "Gives hugs with appropriate pressure and for the right length of time.",
-      type: "cat",
-      imageUrl: "http://img.izismile.com/img/img2/20090219/cats_02.jpg"
-    },
   ];
   
 const printToDom = (divId, textToPrint) => {
